@@ -1,0 +1,45 @@
+<head>
+	<title>TaskList</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>TaskList</h1>
+		</div>
+	</header>
+
+	<hr />
+	<div class="container">
+		
+		{{> todolist}}
+
+	</div>
+</body>
+
+<template name="todolist">
+	
+	<ul>
+		<li>{{> addTaskForm}}</li>
+		{{#each task}}
+			<li class="task {{currentTask}}">
+
+				<span class="task-description">
+					{{desc}} 
+				</span>
+				<span class="btns">
+					done
+				</span>	
+
+			</li>
+		{{/each}}
+	</ul>
+</template>
+
+<template name="addTaskForm">
+	<form>
+		<input type="text" name="newTask" class="newTask">
+		<br />
+		<input type="submit" value="Add Task" class="submit">
+	</form>
+</template>
