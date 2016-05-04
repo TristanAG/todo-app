@@ -501,3 +501,12 @@ li{
 input.newTask{
   height: 22px;
 }
+
+.symbol{
+  color: #F5E216;
+  border-right: 1px solid #E1E1E1;
+  padding-top: 2px;
+  
+
+
+}
