@@ -5,7 +5,7 @@
 <body>
 	<header>
 		<div class="container">
-			<h1>TaskList</h1>
+			<h1>TaskList</h1>test
 		</div>
 	</header>
 
@@ -24,14 +24,17 @@
 		{{#each task}}
 			<li class="task {{currentTask}}"><span class="symbol">|</span>
 
-				<span class="task-description">
-					{{desc}} 
-				</span>
 				<span class="btns">
 					done
 				</span>	
 
+				<span class="task-description">
+					{{desc}} 
+				</span>
+				
+
 			</li>
+
 		{{/each}}
 	</ul>
 </template>
