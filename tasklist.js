@@ -1,5 +1,6 @@
 TaskList = new Mongo.Collection('tasks');
 
+
 if(Meteor.isClient){
 
 	Template.todolist.helpers({
